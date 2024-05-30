@@ -24,7 +24,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 export default {
     data() {
         return {
@@ -46,46 +45,47 @@ export default {
         async submitForm() {
             console.log('Submitting transaction:', this.transaction);
             try {
-                // const response = await axios.post('https://gjar-backendini.000webhostapp.com/api/transaksi', this.transaction, {
+                const response = await fetch('https://gjar-backendini.000webhostapp.com/api/transaksi', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify(this.transaction)
+                    });
+                if (response.status === 200 || response.status === 201) {
+                    alert('Transaction created successfully!');
+                    // Reset the form
+                    this.transaction = {
+                        total_price: 0,
+                        items: [{ item_name: '', quantity: 1, price: 0 }],
+                    };
+                } else {
+                    console.error('Error response:', response.data);
+                    alert(`Error: ${response.data.message}`);
+                }
+                // const response = await axios({
+                //     method: 'post',
+                //     url: 'https://gjar-backendini.000webhostapp.com/api/transaksi',
+                //     data: this.transaction,
                 //     headers: {
-                //         'Content-Type': 'application/json',
-                //     },
+                //         'Content-Type': 'application/json'
+                // }
                 // });
                 // if (response.status === 200 || response.status === 201) {
-                //     alert('Transaction created successfully!');
-                //     // Reset the form
-                //     this.transaction = {
-                //         total_price: 0,
-                //         items: [{ item_name: '', quantity: 1, price: 0 }],
-                //     };
+                // alert('Transaction created successfully!');
+                // // Reset the form
+                // this.transaction = {
+                //     total_price: 0,
+                //     items: [{ item_name: '', quantity: 1, price: 0 }],
+                // };
                 // } else {
-                //     console.error('Error response:', response.data);
-                //     alert(`Error: ${response.data.message}`);
+                // console.error('Error response:', response.data);
+                // alert(`Error: ${response.data.message}`);
                 // }
-                const response = await axios({
-                    method: 'post',
-                    url: 'https://gjar-backendini.000webhostapp.com/api/transaksi',
-                    data: this.transaction,
-                    headers: {
-                        'Content-Type': 'application/json'
-                }
-                });
-                if (response.status === 200 || response.status === 201) {
-                alert('Transaction created successfully!');
-                // Reset the form
-                this.transaction = {
-                    total_price: 0,
-                    items: [{ item_name: '', quantity: 1, price: 0 }],
-                };
-                } else {
-                console.error('Error response:', response.data);
-                alert(`Error: ${response.data.message}`);
-                }
             } catch (error) {
                 console.error('Fetch error:', error);
                 console.error('Error message:', error.message);
-                alert('Error creating transaction: ' + error.message);
-                console.error('Axios error:', error);
                 alert('Error creating transaction: ' + error.message);
             }
         }
