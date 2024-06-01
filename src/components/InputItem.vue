@@ -45,10 +45,11 @@ export default {
         async submitForm() {
             console.log('Submitting transaction:', this.transaction);
             try {
-                const response = await fetch('https://gjar-backendini.000webhostapp.com/api/transaksi', {
+                const response = await fetch('http://127.0.0.1:8000/api/transaksi', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
+                            'Access-Control-Allow-Origin': '*',
                             'Accept': 'application/json'
                         },
                         body: JSON.stringify(this.transaction)
