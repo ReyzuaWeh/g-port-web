@@ -10,11 +10,11 @@
         <p class="text-2xl text-center text-indigo-300 font-semibold mb-4">Hobbies:</p>
         <div class="flex justify-around">
           <div class="hobby-item">
-            <img src="../assets/dr.ratio.jpg" alt="" class="w-32 h-32 rounded-lg mb-2">
+            <img src="../assets/puzzle.jpg" alt="" class="w-32 h-32 rounded-lg mb-2">
             <p class="text-center text-base md:text-lg text-gray-300">Solve Puzzles</p>
           </div>
           <div class="hobby-item">
-            <img src="../assets/dr.ratio.jpg" alt="" class="w-32 h-32 rounded-lg mb-2">
+            <img src="../assets/code.jpg" alt="" class="w-32 h-32 rounded-lg mb-2">
             <p class="text-center text-base md:text-lg text-gray-300">Trying Code</p>
           </div>
         </div>

@@ -20,7 +20,6 @@
           <textarea id="message" name="message" rows="4" placeholder="Enter your message"
             class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none resize-none focus:ring-indigo-500 focus:border-indigo-500 text-sm"></textarea>
         </div>
-  
         <button type="submit" class="w-full bg-indigo-500 text-slate-50 py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300 ease-in-out">
           Submit
         </button>

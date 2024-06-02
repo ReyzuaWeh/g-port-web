@@ -1,4 +1,7 @@
 export default {
+    mounted() {
+        window.addEventListener('scroll', this.cekScrollY)
+    },
     methods:{
         scrollToRoute(){
             console.log('cek')
@@ -8,6 +11,15 @@ export default {
                 return 0;
             }
             toRoute.scrollIntoView({behavior:'smooth'});
-        }
+        },
+        scrollToContact(){
+            console.log('Contact')
+            const toRoute = document.getElementById('contact');
+            if(!toRoute){
+                console.log('Tidak ada Contact');
+                return 0;
+            }
+            toRoute.scrollIntoView({behavior:'smooth'});
+        },
     }
 }

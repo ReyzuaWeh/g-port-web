@@ -6,7 +6,7 @@
       <component id="route" :is="Component" />
     </transition>
   </router-view>
-  <AppContact></AppContact>
+  <AppContact id="contact"></AppContact>
   <AppScroller></AppScroller>
   <AppFooter></AppFooter>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
