@@ -4,14 +4,14 @@
             <div class="text-3xl font-bold">
                 <div class="cursor-default flex items-center">
                     <img src="../assets/pi.png" class="md:max-w-10 max-w-7">
-                    <h1 class="hover:text-gray-300 text-xl md:text-3xl">Portfolio</h1>
+                    <h1 class="hover:text-gray-300 text-xl md:text-3xl transition-all duration-400">Portfolio</h1>
                 </div>
             </div>
             <nav>
                 <ul class="flex space-x-4">
-                    <li><router-link @click="scrollToRoute" to="/" class="hover:text-gray-300">About Me</router-link></li>
-                    <li><router-link @click="scrollToRoute" to="/learned" class="hover:text-gray-300">Learned</router-link></li>
-                    <li><a @click="scrollToContact" class="hover:text-gray-300 cursor-pointer">Contact</a></li>
+                    <li><router-link @click="scrollToRoute" to="/" class="hover:text-gray-300 transition-all duration-400">About Me</router-link></li>
+                    <li><router-link @click="scrollToRoute" to="/learned" class="hover:text-gray-300 transition-all duration-400">Learned</router-link></li>
+                    <li><a @click="scrollToContact" class="hover:text-gray-300 cursor-pointer transition-all duration-400">Contact</a></li>
                 </ul>
             </nav>
         </div>

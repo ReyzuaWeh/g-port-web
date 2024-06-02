@@ -10,7 +10,7 @@ export default {
                 console.log('Tidak ada View');
                 return 0;
             }
-            toRoute.scrollIntoView({behavior:'smooth'});
+            window.scrollTo({top:toRoute.offsetTop,behavior:'smooth'});
         },
         scrollToContact(){
             console.log('Contact')
