@@ -1,6 +1,6 @@
 <template>
     <Transition name="footer-scroll">
-        <footer v-if="!isHidden" class="bg-gray-800 p-4 text-white shadow-md mx-0 fixed bottom-0 w-full h-fit">
+        <footer v-show="!isHidden" class="bg-gray-800 p-4 text-white shadow-md mx-0 fixed bottom-0 w-full h-fit">
             <div class="mx-auto flex justify-center items-center">
                 <nav>
                     <ul class="flex text-base align-middle space-x-4">

@@ -1,34 +1,57 @@
 <template>
-  <div class="flex min-h-fit h-96 flex-col align-middle min-w-fit max-w-screen mx-12 my-4 text-white bg-gray-900 p-4 rounded-md">
-    <h1 class="text-3xl text-indigo-500 font-semibold">About Me</h1>
+  <div class="routeDesign">
+    <h1 class="text-4xl text-indigo-500 font-bold mb-4">ABOUT ME</h1>
     <div class="penjelasan">
-      <div class="flex">
-        <img>
-        <p class="text-sm">I am Ginanjar Al Farizi, a person that likes puzzles and solving them. For now, I am a student from SMKN 4 Bandung and specialize myself in Software Engineer.</p>
+      <div class="flex flex-col md:flex-row items-center mb-6">
+        <img src="../assets/dr.ratio.jpg" alt="" class="w-44 h-44 rounded-full mb-4 md:mb-0 md:mr-6">
+        <p class="text-lg md:text-xl text-justify text-gray-300">I am Ginanjar Al Farizi, a person that likes puzzles and solving them. Currently, I am a student at SMKN 4 Bandung, specializing in Software Engineering. You may just call me "Gjar" or "Gin" for more simple call.</p>
       </div>
       <div class="my-2">
-        <p class="text text-xl text-indigo-300 font-semibold">Hobbies : </p>
-        <div class="flex justify-between">
-          <div>
-            <img>
-            <p>Solve Puzzles</p>
+        <p class="text-2xl text-center text-indigo-300 font-semibold mb-4">Hobbies:</p>
+        <div class="flex justify-around">
+          <div class="hobby-item">
+            <img src="../assets/dr.ratio.jpg" alt="" class="w-32 h-32 rounded-lg mb-2">
+            <p class="text-center text-base md:text-lg text-gray-300">Solve Puzzles</p>
           </div>
-          <div>
-            <img>
-            <p>Trying Programming Code</p>
+          <div class="hobby-item">
+            <img src="../assets/dr.ratio.jpg" alt="" class="w-32 h-32 rounded-lg mb-2">
+            <p class="text-center text-base md:text-lg text-gray-300">Trying Code</p>
           </div>
         </div>
       </div>
+      <p class="text-gray-300 mt-11 text-center text-lg md:text-2xl font-semibold italic">"DON'T MAKE IT COMPLICATED, JUST SIMPLIFY"</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'AboutMe',
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.penjelasan {
+  flex-grow: 1;
+}
+
+.hobby-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .penjelasan .flex {
+    text-align: justify;
+  }
+}
 </style>

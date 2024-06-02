@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.routeDesign {
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  height: auto;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #1f2937; 
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+.routeDesign:hover {
+  background-color: #1d232e; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.651); 
+}

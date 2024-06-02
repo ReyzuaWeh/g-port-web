@@ -1,8 +1,8 @@
 <template>
     <div class="bg-gray-100 min-h-screen flex items-center justify-center">
-        <div class="p-6 max-w-xl mx-auto bg-white rounded-xl shadow-lg space-y-4">
-            <h1 class="text-3xl font-semibold text-gray-800">Welcome to My Portfolio</h1>
-            <p class="text-gray-600 leading-relaxed">
+        <div class="p-6 max-w-xl mx-auto bg-slate-50 rounded-xl shadow-lg space-y-4">
+            <h1 class="text-3xl md:text-4xl font-semibold text-gray-800">Welcome to My Portfolio</h1>
+            <p class="text-gray-600 md:text-lg leading-relaxed">
                 Hi there! I made this simple website to explain about myself and testing some of my programming skills.
             </p>
             <div class="flex justify-between items-end">
@@ -21,15 +21,10 @@
 </template>
 
 <script>
+import methods from '../code/instance';
 export default {
     name: 'AppHome',
-    methods:{
-        scrollToRoute(){
-            console.log('cek')
-            const toRoute = document.getElementById('route');
-            toRoute.scrollIntoView({behavior:'smooth'});
-        }
-    }
+    mixins : [methods]
 };
 </script>
 

@@ -45,7 +45,7 @@ export default {
         async submitForm() {
             console.log('Submitting transaction:', this.transaction);
             try {
-                const response = await fetch('http://127.0.0.1:8000/api/transaksi', {
+                const response = await fetch('https:/project.tatsuya.tech/api/transaksi', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
