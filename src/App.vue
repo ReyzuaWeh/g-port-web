@@ -6,6 +6,7 @@
       <component id="route" :is="Component" />
     </transition>
   </router-view>
+  <AppContact></AppContact>
   <AppScroller></AppScroller>
   <AppFooter></AppFooter>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
@@ -16,6 +17,7 @@
 import AppFooter from './components/Footer.vue';
 import AppHeader from './components/Header.vue';
 import AppScroller from './components/ScrollBack.vue';
+import AppContact from './views/Contact.vue';
 import AppHome from './views/Home.vue';
 // import InputItem from './components/InputItem.vue';
 // import CekData from './components/cekData.vue';
@@ -29,7 +31,8 @@ export default {
     AppHeader,
     AppHome,
     AppFooter,
-    AppScroller
+    AppScroller,
+    AppContact
   },
 }
 </script>

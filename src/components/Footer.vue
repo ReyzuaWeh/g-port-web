@@ -1,5 +1,5 @@
 <template>
-    <Transition name="footer-scroll">
+    <Transition name="footer-scroll" class="footer-scroll">
         <footer v-show="!isHidden" class="bg-gray-800 p-4 text-white shadow-md mx-0 fixed bottom-0 w-full h-fit">
             <div class="mx-auto flex justify-center items-center">
                 <nav>
@@ -41,5 +41,8 @@ export default {
 .footer-scroll-enter-active, .footer-scroll-leave-active{
     transition: all 0.3s ease;
 }
+.footer-scroll{
+    transition: all 0.3s ease;
 
+}
 </style>
