@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-100 min-h-screen flex items-center justify-center">
     <div class="bg-slate-50 p-8 rounded-md shadow-lg max-w-md w-full">
-      <h2 class="text-3xl font-bold mb-6 text-gray-800">Contact Us</h2>
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Contact Me</h2>
 
       <div class="mb-4">
         <label for="name" class="block text-sm md:text-base font-medium text-gray-700 mb-2">Your Name</label>
