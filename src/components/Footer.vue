@@ -6,8 +6,7 @@
                     <ul class="flex text-base align-middle space-x-4">
                         <li><a class="hover:text-gray-300"><i class="bi bi-c-circle"></i></a></li>
                         <li><a href="https://github.com/ReyzuaWeh" target="_blank" class="hover:text-gray-300"><i class="bi bi-github"></i></a></li>
-                        <li><a href="#" class="hover:text-gray-300">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Support</a></li>
+                        <li><a href="https://www.instagram.com/gjar.ajaa" target="_blank" class="hover:text-gray-300"><i class="bi bi-instagram"></i></a></li>
                     </ul>
                 </nav>
             </div>

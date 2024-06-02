@@ -1,8 +1,11 @@
 <template>
-    <header class="bg-gray-800 p-2 top-0 text-white shadow-md mx-0 fixed w-full h-fit">
+    <header class="bg-gray-800 p-2 px-1 top-0 text-white shadow-md mx-0 fixed w-full h-fit">
         <div class="mx-auto py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold">
-                <h1 class="hover:text-gray-300 cursor-default">Vue Web</h1>
+            <div class="text-3xl font-bold">
+                <div class="cursor-default flex items-center">
+                    <img src="../assets/pi.png" class="md:max-w-10 max-w-7">
+                    <h1 class="hover:text-gray-300 text-xl md:text-3xl">Portfolio</h1>
+                </div>
             </div>
             <nav>
                 <ul class="flex space-x-4">

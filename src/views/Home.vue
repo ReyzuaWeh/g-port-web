@@ -7,7 +7,7 @@
             </p>
             <div class="flex justify-between items-end">
                 <img src="../assets/dr_ratio.png" alt="" class="rounded-lg w-24 h-full">
-                <router-link to="/" class="text-blue-500 h-fit font-medium hover:underline">
+                <router-link to="/projects" @click="scrollToRoute" class="text-blue-500 h-fit font-medium hover:underline">
                     <span>View Projects</span>
                 </router-link>
             </div>
