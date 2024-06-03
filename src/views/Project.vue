@@ -10,6 +10,14 @@
         </p>
       </div>
       <div class="penjelasan space-y-2">
+        <a href="https://uprak-vue.vercel.app/index.html" target="_blank" class="text-blue-400 text-lg md:text-2xl font-medium hover:underline">
+          Uprak Vue
+        </a>
+        <p class="text-gray-300 text-sm md:text-xl leading-relaxed">
+          A project that made for my practice exam in KK2 course. This project is not fully responsive, but it utilizes local storage.
+        </p>
+      </div>
+      <div class="penjelasan space-y-2">
         <a href="https://github.com/ReyzuaWeh?tab=repositories" target="_blank" class="text-blue-400 text-lg md:text-2xl font-medium hover:underline">
           Git Repositories
         </a>
