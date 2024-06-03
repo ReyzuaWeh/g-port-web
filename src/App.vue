@@ -6,6 +6,7 @@
       <component id="route" :is="Component" />
     </transition>
   </router-view>
+  <AppProject id="projects"></AppProject>
   <AppContact id="contact"></AppContact>
   <AppScroller></AppScroller>
   <AppFooter></AppFooter>
@@ -18,6 +19,7 @@ import AppHeader from './components/Header.vue';
 import AppScroller from './components/ScrollBack.vue';
 import AppContact from './views/Contact.vue';
 import AppHome from './views/Home.vue';
+import AppProject from './views/Project.vue';
 
 export default {
   name: 'App',
@@ -26,7 +28,8 @@ export default {
     AppHome,
     AppFooter,
     AppScroller,
-    AppContact
+    AppContact,
+    AppProject
   },
 }
 </script>

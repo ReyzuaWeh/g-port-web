@@ -7,9 +7,9 @@
             </p>
             <div class="flex justify-between items-end">
                 <img src="../assets/dr_ratio.png" alt="" class="rounded-lg w-24 h-full">
-                <router-link to="/projects" @click="scrollToRoute" class="text-blue-500 h-fit font-medium hover:underline">
-                    <span>View Projects</span>
-                </router-link>
+                <a href="./documents/CV_GinanjarAlFarizi.pdf" download="CV_GinanjarAlFarizi.pdf" class="text-blue-500 h-fit font-medium hover:underline">
+                    <span>Download CV</span>
+                </a>
             </div>
             <div class="w-full flex justify-center">
                 <i @click="scrollToRoute" class="bi bi-caret-down-fill hover:text-xl transition-all duration-500 text-lg cursor-pointer" ></i>
