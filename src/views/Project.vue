@@ -14,7 +14,7 @@
         Uprak Vue
       </a>
       <p class="text-gray-300 text-sm md:text-xl leading-relaxed">
-        A project that made for my practice exam in KK2 course. This project is not fully responsive, but it utilizes local storage.
+        A project that made for my practice exam in MPRPL course. This project is not fully responsive, but it utilizes local storage.
       </p>
     </div>
     <div class="penjelasan space-y-2">
