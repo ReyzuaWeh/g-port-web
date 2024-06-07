@@ -6,19 +6,34 @@
   
         <div class="mb-4">
           <label for="name" class="block text-sm md:text-base font-medium text-gray-700 mb-2">Your Name</label>
-          <input required type="text" id="name" name="name" v-model="contact.name" placeholder="Enter your name"
+          <input
+            spellcheck="false" 
+            autocomplete="off" 
+            autocorrect="off" 
+            autocapitalize="off" 
+            required type="text" id="name" name="name" v-model="contact.name" placeholder="Enter your name"
             class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-sm md:text-base">
         </div>
   
         <div class="mb-4">
           <label for="email" class="block text-sm md:text-base font-medium text-gray-700 mb-2">Your Email</label>
-          <input required type="email" id="email" name="email" v-model="contact.email" placeholder="Enter your email"
+          <input
+            spellcheck="false" 
+            autocomplete="off" 
+            autocorrect="off" 
+            autocapitalize="off"  
+            required type="email" id="email" name="email" v-model="contact.email" placeholder="Enter your email"
             class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-sm md:text-base">
         </div>
   
         <div class="mb-6">
           <label for="message" class="block text-sm md:text-base font-medium text-gray-700 mb-2">Your Message</label>
-          <textarea required id="message" name="message" v-model="contact.message" rows="4" placeholder="Enter your message"
+          <textarea 
+            spellcheck="false" 
+            autocomplete="off" 
+            autocorrect="off" 
+            autocapitalize="off" 
+            required id="message" name="message" v-model="contact.message" rows="4" placeholder="Enter your message"
             class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none resize-none focus:ring-indigo-500 focus:border-indigo-500 text-sm md:text-base"></textarea>
         </div>
         <button type="submit" class="w-full bg-indigo-500 text-slate-50 py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300 ease-in-out">
