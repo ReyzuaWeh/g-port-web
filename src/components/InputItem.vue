@@ -49,8 +49,9 @@ export default {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
-                            'Access-Control-Allow-Origin': '*',
-                            'Accept': 'application/json'
+                            'Access-Control-low-Origin': '*',
+                            Accept: 'application/json',
+                            'mode':'cors'
                         },
                         body: JSON.stringify(this.transaction)
                     });
@@ -60,7 +61,7 @@ export default {
                     this.transaction = {
                         total_price: 0,
                         items: [{ item_name: '', quantity: 1, price: 0 }],
-                    };
+                    }
                 } else {
                     console.error('Error response:', response.data);
                     alert(`Error: ${response.data.message}`);

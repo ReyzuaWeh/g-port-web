@@ -31,6 +31,10 @@
         <p class="text-gray-300">Laravel</p>
       </div>
       <div class="bagian">
+        <img src="../assets/native.png" alt="" class="learned">
+        <p class="text-gray-300">Native PHP</p>
+      </div>
+      <div class="bagian">
         <img src="../assets/git.png" alt="" class="learned">
         <p class="text-gray-300">Git</p>
       </div>

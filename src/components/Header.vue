@@ -8,7 +8,7 @@
                 </div>
             </div>
             <nav>
-                <ul class="flex space-x-4">
+                <ul class="flex space-x-4 text-xs md:text-lg">
                     <li><router-link @click="scrollToRoute" to="/" class="hover:text-gray-300 transition-all duration-400">About Me</router-link></li>
                     <li><router-link @click="scrollToRoute" to="/learned" class="hover:text-gray-300 transition-all duration-400">Learned</router-link></li>
                     <li><a @click="scrollTo('#projects')" class="hover:text-gray-300 cursor-pointer transition-all duration-400">Projects</a></li>
