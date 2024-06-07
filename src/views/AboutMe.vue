@@ -3,18 +3,18 @@
     <h1 class="text-4xl text-indigo-500 font-bold mb-4">ABOUT ME</h1>
     <div class="penjelasan">
       <div class="flex flex-col md:flex-row items-center mb-6">
-        <img src="../assets/dr.ratio.jpg" alt="" class="w-44 h-44 rounded-full mb-4 md:mb-0 md:mr-6">
+        <img src="../assets/me.png" alt="" class="w-44 h-44 border-2 border-slate-500 rounded-full mb-4 md:mb-0 md:mr-6 bg-blue-200">
         <p class="text-lg md:text-xl text-justify text-gray-300">I am Ginanjar Al Farizi, a person that likes puzzles and solving them. Currently, I am a student at SMKN 4 Bandung, specializing in Software Engineering. You may just call me "Gjar" or "Gin" for more simple call.</p>
       </div>
       <div class="my-2">
         <p class="text-2xl text-center text-indigo-300 font-semibold mb-4">Hobbies:</p>
         <div class="flex justify-around">
           <div class="hobby-item">
-            <img src="../assets/puzzle.jpg" alt="" class="w-32 h-32 rounded-lg mb-2">
+            <img src="../assets/puzzle.jpg" alt="" class="w-20 h-20 lg:w-28 lg:h-28 rounded-lg mb-2">
             <p class="text-center text-base md:text-lg text-gray-300">Solve Puzzles</p>
           </div>
           <div class="hobby-item">
-            <img src="../assets/code.jpg" alt="" class="w-32 h-32 rounded-lg mb-2">
+            <img src="../assets/code.jpg" alt="" class="w-20 h-20 lg:w-28 lg:h-28 rounded-lg mb-2">
             <p class="text-center text-base md:text-lg text-gray-300">Trying Code</p>
           </div>
         </div>
@@ -31,7 +31,6 @@ export default {
 </script>
 
 <style scoped>
-
 .penjelasan {
   flex-grow: 1;
 }
@@ -52,6 +51,14 @@ h1 {
 @media (min-width: 768px) {
   .penjelasan .flex {
     text-align: justify;
+  }
+}
+@media (min-width: 1024px){
+  .routeDesign{
+    justify-content: center;
+    width: 75%;
+    height: 75%;
+    margin: 2rem auto;
   }
 }
 </style>
