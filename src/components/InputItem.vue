@@ -45,14 +45,14 @@ export default {
         async submitForm() {
             console.log('Submitting transaction:', this.transaction);
             try {
-                const response = await fetch('https:/project.tatsuya.tech/api/transaksi', {
+                const response = await fetch('https://project.tatsuya.tech/api/transaksi', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
                             'Access-Control-low-Origin': '*',
                             Accept: 'application/json',
-                            'mode':'cors'
                         },
+                        mode : 'cors',
                         body: JSON.stringify(this.transaction)
                     });
                 if (response.status === 200 || response.status === 201) {
