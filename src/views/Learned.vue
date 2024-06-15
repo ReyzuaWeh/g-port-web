@@ -27,6 +27,10 @@
         <p class="text-gray-300">Tailwind CSS</p>
       </div>
       <div class="bagian">
+        <img src="../assets/bootstrap.png" alt="" class="learned">
+        <p class="text-gray-300">Bootstrap</p>
+      </div>
+      <div class="bagian">
         <img src="../assets/laravel.png" alt="" class="learned">
         <p class="text-gray-300">Laravel</p>
       </div>
@@ -57,10 +61,11 @@ export default {
 </script>
 
 <style scoped>
-.bagian{
+.bagian {
   text-align: center;
 }
-img.learned{
+
+img.learned {
   width: 5rem;
   height: 5rem;
   margin: 0 auto;
