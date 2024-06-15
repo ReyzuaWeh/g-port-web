@@ -62,6 +62,7 @@ export default {
 }
 
 .card-img-top {
+    font-weight: bold;
     max-width: 40%;
     margin: 0 auto;
     margin-bottom: 2;
